@@ -1,0 +1,148 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upap="clr-namespace:UiPath.PDF.Activities.PDF;assembly=UiPath.PDF.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.Windows.Core</AssemblyReference>
+      <AssemblyReference>System.Private.Windows.GdiPlus</AssemblyReference>
+      <AssemblyReference>System.Runtime</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Invoice PDF Extraction" sap:VirtualizedContainerService.HintSize="897.2,1569.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="inputFolder" />
+      <Variable x:TypeArguments="x:String" Name="outputFolder" />
+      <Variable x:TypeArguments="x:String" Name="outputCsv" />
+      <Variable x:TypeArguments="sc:IEnumerable" Name="pdfFiles" />
+      <Variable x:TypeArguments="x:String" Name="pdfPath" />
+      <Variable x:TypeArguments="x:String" Name="ocrText" />
+      <Variable x:TypeArguments="sd2:DataTable" Name="invoiceTable" />
+      <Variable x:TypeArguments="x:String" Name="csvText" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="processedCount" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign DisplayName="Set Input Folder" sap:VirtualizedContainerService.HintSize="449.6,174.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[inputFolder]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.CurrentDirectory, "Input")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="Set Output Folder" sap:VirtualizedContainerService.HintSize="449.6,174.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[outputFolder]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.CurrentDirectory, "Output")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="Set Output CSV Path" sap:VirtualizedContainerService.HintSize="449.6,174.4" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[outputCsv]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[Path.Combine(outputFolder, "InvoiceResults.csv")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Input Folder" sap:VirtualizedContainerService.HintSize="449.6,122.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[inputFolder]" />
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Output Folder" sap:VirtualizedContainerService.HintSize="449.6,122.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[outputFolder]" />
+    <Assign DisplayName="Find PDF Files" sap:VirtualizedContainerService.HintSize="449.6,174.4" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sc:IEnumerable">[pdfFiles]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sc:IEnumerable">[Directory.GetFiles(inputFolder, "*.pdf", SearchOption.TopDirectoryOnly)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="Process Each Invoice PDF" sap:VirtualizedContainerService.HintSize="449.6,150.4" sap2010:WorkflowViewState.IdRef="ForEach_1" Values="[pdfFiles]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="currentPdf" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Extract and Validate Invoice" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Assign DisplayName="Set Current PDF" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[pdfPath]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[currentPdf]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ReadPDFWithOCR ResourceFile="{x:Null}" DegreeOfParallelism="1" DisplayName="OCR Invoice PDF" FileName="[pdfPath]" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="150" Range="All" Text="[ocrText]">
+              <ui:ReadPDFWithOCR.Item>
+                <upap:ItemArgument x:TypeArguments="upr:IResource" ResourceFile="{x:Null}" FileName="[pdfPath]" />
+              </ui:ReadPDFWithOCR.Item>
+              <ui:ReadPDFWithOCR.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <p:UiPathDocumentOCR ApiKey="{x:Null}" Endpoint="{x:Null}" ImageFile="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Local UiPath Document OCR" ExtractWords="True" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_1" Image="[Image]" Language="auto" NoopExecution="False" Profile="None" Scale="1" Timeout="100000" UseLocalServer="True" UseSeparateOcrProcess="True">
+                    <p:UiPathDocumentOCR.Source>
+                      <p:OcrImageInput ImageFile="{x:Null}" Image="[Image]" />
+                    </p:UiPathDocumentOCR.Source>
+                  </p:UiPathDocumentOCR>
+                </ActivityFunc>
+              </ui:ReadPDFWithOCR.OCREngine>
+            </ui:ReadPDFWithOCR>
+            <ui:InvokeCode ContinueOnError="{x:Null}" Code="If invoiceTable Is Nothing Then&#xA;  invoiceTable = New System.Data.DataTable()&#xA;  invoiceTable.Columns.Add(&quot;SourceFile&quot;, GetType(String))&#xA;  invoiceTable.Columns.Add(&quot;InvoiceNumber&quot;, GetType(String))&#xA;  invoiceTable.Columns.Add(&quot;InvoiceDate&quot;, GetType(String))&#xA;  invoiceTable.Columns.Add(&quot;Vendor&quot;, GetType(String))&#xA;  invoiceTable.Columns.Add(&quot;Amount&quot;, GetType(String))&#xA;  invoiceTable.Columns.Add(&quot;Status&quot;, GetType(String))&#xA;  invoiceTable.Columns.Add(&quot;ValidationReason&quot;, GetType(String))&#xA;End If&#xA;Dim invoiceNumber As String = &quot;&quot;&#xA;Dim invoiceDate As String = &quot;&quot;&#xA;Dim vendor As String = &quot;&quot;&#xA;Dim amount As String = &quot;&quot;&#xA;Dim reason As String = &quot;&quot;&#xA;Dim invMatch = System.Text.RegularExpressions.Regex.Match(ocrText, &quot;(?im)^\s*Invoice\s+Number\s*:\s*([A-Z0-9][A-Z0-9\-/]+)&quot;)&#xA;If invMatch.Success Then invoiceNumber = invMatch.Groups(1).Value.Trim()&#xA;Dim dateMatch = System.Text.RegularExpressions.Regex.Match(ocrText, &quot;(?im)^\s*Invoice\s+Date\s*:\s*([0-9]{1,2}[\./-][0-9]{1,2}[\./-][0-9]{2,4})&quot;)&#xA;If dateMatch.Success Then invoiceDate = dateMatch.Groups(1).Value.Trim().Replace(&quot;.&quot;, &quot;/&quot;)&#xA;Dim vendorMatch = System.Text.RegularExpressions.Regex.Match(ocrText, &quot;(?im)^\s*Sold\s+By\s*:\s*(?:\r?\n\s*)?([^\r\n]+)$&quot;)&#xA;If vendorMatch.Success Then vendor = vendorMatch.Groups(1).Value.Trim()&#xA;Dim amountMatch = System.Text.RegularExpressions.Regex.Match(ocrText, &quot;(?im)^\s*TOTAL\s*:.*?([0-9,]+(?:\.[0-9]{2})?)\s*$&quot;)&#xA;If amountMatch.Success Then amount = amountMatch.Groups(1).Value.Trim()&#xA;Dim parsedDate As DateTime&#xA;Dim parsedAmount As Decimal&#xA;Dim validDate = DateTime.TryParse(invoiceDate, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, parsedDate)&#xA;Dim validAmount = Decimal.TryParse(amount.Replace(&quot;,&quot;, &quot;&quot;), Globalization.NumberStyles.Number, Globalization.CultureInfo.InvariantCulture, parsedAmount) AndAlso parsedAmount &gt;= 0D&#xA;If String.IsNullOrWhiteSpace(invoiceNumber) Then reason += &quot;Invoice number missing; &quot;&#xA;If Not validDate Then reason += &quot;Invoice date missing or invalid; &quot;&#xA;If String.IsNullOrWhiteSpace(vendor) Then reason += &quot;Vendor missing; &quot;&#xA;If Not validAmount Then reason += &quot;Amount missing or invalid; &quot;&#xA;Dim status As String = If(String.IsNullOrWhiteSpace(reason), &quot;Valid&quot;, &quot;Invalid&quot;)&#xA;invoiceTable.Rows.Add(System.IO.Path.GetFileName(pdfPath), invoiceNumber, invoiceDate, vendor, amount, status, reason.TrimEnd(&quot; &quot;c, &quot;;&quot;c))&#xA;processedCount += 1" DisplayName="Parse and Validate Invoice Fields" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+              <ui:InvokeCode.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="ocrText">[ocrText]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="pdfPath">[pdfPath]</InArgument>
+                <InOutArgument x:TypeArguments="sd2:DataTable" x:Key="invoiceTable">[invoiceTable]</InOutArgument>
+                <OutArgument x:TypeArguments="x:Int32" x:Key="processedCount">[processedCount]</OutArgument>
+              </ui:InvokeCode.Arguments>
+            </ui:InvokeCode>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+    <ui:OutputDataTable DataTable="[invoiceTable]" DisplayName="Convert Results to CSV" sap:VirtualizedContainerService.HintSize="449.6,112.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[csvText]" />
+    <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" DisplayName="Export Invoice Results CSV" FileName="[outputCsv]" sap:VirtualizedContainerService.HintSize="449.6,175.2" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[csvText]" />
+    <ui:LogMessage DisplayName="Log Processing Summary" sap:VirtualizedContainerService.HintSize="449.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Processed &quot; &amp; processedCount.ToString() &amp; &quot; invoice PDF file(s). Results: &quot; &amp; outputCsv]" />
+  </Sequence>
+</Activity>
