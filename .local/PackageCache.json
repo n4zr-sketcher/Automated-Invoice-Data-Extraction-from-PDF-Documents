@@ -3,7 +3,7 @@
     {
       "Package": {
         "Id": "UiPath.CoreIPC",
-        "Version": "2.0.1"
+        "Version": "2.1.0-20210811-12-fix"
       },
       "Assemblies": [],
       "Path": null
@@ -21,10 +21,63 @@
     {
       "Package": {
         "Id": "UiPath.OCR.Activities",
-        "Version": "4.5.0"
+        "Version": "4.6.0-preview"
       },
-      "Assemblies": [],
-      "Path": null
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.2\\lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.logging\\6.0.1\\lib/netstandard2.1/Microsoft.Extensions.Logging.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.logging.tracesource\\6.0.0\\lib/netstandard2.0/Microsoft.Extensions.Logging.TraceSource.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.options\\6.0.1\\lib/netstandard2.1/Microsoft.Extensions.Options.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.1\\lib/net6.0/Microsoft.Extensions.Primitives.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\newtonsoft.json\\13.0.4\\lib/net6.0/Newtonsoft.Json.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\nito.asyncex.context\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Context.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\nito.asyncex.coordination\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Coordination.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\nito.asyncex.interop.waithandles\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Interop.WaitHandles.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\nito.asyncex.oop\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Oop.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\nito.asyncex.tasks\\5.1.2\\lib/netstandard2.0/Nito.AsyncEx.Tasks.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\nito.cancellation\\1.1.2\\lib/netstandard2.0/Nito.Cancellation.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\nito.collections.deque\\1.1.1\\lib/netstandard2.0/Nito.Collections.Deque.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\nito.disposables\\2.2.1\\lib/netstandard2.1/Nito.Disposables.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\nlog\\4.7.15\\lib/netstandard2.0/NLog.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\polly\\7.1.0\\lib/netstandard2.0/Polly.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\system.activities.viewmodels\\1.20260609.1\\lib/net6.0-windows7.0/System.Activities.ViewModels.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.codedworkflows\\24.10.3\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.coreipc\\2.1.0-20210811-12-fix\\lib/net5.0-windows7.0/UiPath.CoreIpc.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/Emgu.CV.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/concrt140.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/cvextern.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/libusb-1.0.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/msvcp140.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/msvcp140_1.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/msvcp140_2.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/msvcp140_atomic_wait.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/msvcp140_codecvt_ids.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/runtimes/win-x64/native/concrt140.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/runtimes/win-x64/native/cvextern.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/runtimes/win-x64/native/libusb-1.0.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/runtimes/win-x64/native/msvcp140.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/runtimes/win-x64/native/msvcp140_1.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/runtimes/win-x64/native/msvcp140_2.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/runtimes/win-x64/native/msvcp140_atomic_wait.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/runtimes/win-x64/native/msvcp140_codecvt_ids.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/runtimes/win-x64/native/vcruntime140.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/runtimes/win-x64/native/vcruntime140_1.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/vcruntime140.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.emgucvbundle\\3.3.0-preview\\lib/net6.0/vcruntime140_1.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.ocr.activities\\4.6.0-preview\\lib/net6.0-windows7.0/UiPath.OCR.Activities.Api.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.ocr.activities\\4.6.0-preview\\lib/net6.0-windows7.0/UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.ocr.activities\\4.6.0-preview\\lib/net6.0-windows7.0/UiPath.OCR.Activities.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.ocr.activities\\4.6.0-preview\\lib/net6.0-windows7.0/UiPath.OCR.Core.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.ocr.contracts\\3.3.0\\lib/net6.0-windows7.0/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.platform\\26.9.0\\lib/net6.0-windows7.0/UiPath.Platform.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\uipath.ocr.activities\\4.6.0-preview"
     },
     {
       "Package": {
@@ -379,6 +432,28 @@
         }
       ]
     },
+    "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": {
+      "Id": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
+      "Version": "7.0.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.20, 3.0.0)"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime.Azure",
+          "Item2": "[3.3.18, 4.0.0)"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.3, )"
+        },
+        {
+          "Item1": "System.Net.Http",
+          "Item2": "[4.3.4, )"
+        }
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces": {
       "Id": "Microsoft.Bcl.AsyncInterfaces",
       "Version": "8.0.0",
@@ -543,6 +618,24 @@
       "Version": "6.0.4",
       "Dependencies": []
     },
+    "Microsoft.Extensions.Logging.TraceSource": {
+      "Id": "Microsoft.Extensions.Logging.TraceSource",
+      "Version": "6.0.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Logging.Abstractions",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Logging",
+          "Item2": "[6.0.0, )"
+        }
+      ]
+    },
     "Microsoft.Extensions.ObjectPool": {
       "Id": "Microsoft.Extensions.ObjectPool",
       "Version": "8.0.29",
@@ -603,7 +696,7 @@
     },
     "Microsoft.NETCore.Platforms": {
       "Id": "Microsoft.NETCore.Platforms",
-      "Version": "2.1.0",
+      "Version": "1.1.1",
       "Dependencies": []
     },
     "Microsoft.NETCore.Targets": {
@@ -850,6 +943,24 @@
         }
       ]
     },
+    "Microsoft.Rest.ClientRuntime.Azure": {
+      "Id": "Microsoft.Rest.ClientRuntime.Azure",
+      "Version": "3.3.18",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.17, 3.0.0)"
+        },
+        {
+          "Item1": "NETStandard.Library",
+          "Item2": "[1.6.1, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.3, )"
+        }
+      ]
+    },
     "Microsoft.Security.Extensions": {
       "Id": "Microsoft.Security.Extensions",
       "Version": "1.4.0",
@@ -874,44 +985,6 @@
         },
         {
           "Item1": "System.Runtime",
-          "Item2": "[4.3.0, )"
-        }
-      ]
-    },
-    "Microsoft.Win32.Registry": {
-      "Id": "Microsoft.Win32.Registry",
-      "Version": "4.3.0",
-      "Dependencies": [
-        {
-          "Item1": "Microsoft.NETCore.Platforms",
-          "Item2": "[1.1.0, )"
-        },
-        {
-          "Item1": "System.Collections",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Globalization",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Resources.ResourceManager",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Runtime",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Runtime.Extensions",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Runtime.Handles",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Runtime.InteropServices",
           "Item2": "[4.3.0, )"
         }
       ]
@@ -1132,6 +1205,188 @@
         }
       ]
     },
+    "NETStandard.Library": {
+      "Id": "NETStandard.Library",
+      "Version": "1.6.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.NETCore.Platforms",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "Microsoft.Win32.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.AppContext",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Collections",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Collections.Concurrent",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Console",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.Debug",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.Tools",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.Tracing",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Globalization",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Globalization.Calendars",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.Compression",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.Compression.ZipFile",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.FileSystem",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.FileSystem.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Linq",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Linq.Expressions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Net.Http",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Net.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Net.Sockets",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.ObjectModel",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Resources.ResourceManager",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Handles",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.InteropServices",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.InteropServices.RuntimeInformation",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Numerics",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.Algorithms",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.Encoding",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.X509Certificates",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.Encoding",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.Encoding.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.RegularExpressions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading.Timer",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Xml.ReaderWriter",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Xml.XDocument",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
     "Newtonsoft.Json": {
       "Id": "Newtonsoft.Json",
       "Version": "13.0.4",
@@ -1256,6 +1511,11 @@
       "Version": "0.3.65",
       "Dependencies": []
     },
+    "Polly": {
+      "Id": "Polly",
+      "Version": "7.1.0",
+      "Dependencies": []
+    },
     "PuppeteerSharp": {
       "Id": "PuppeteerSharp",
       "Version": "18.1.0",
@@ -1347,6 +1607,20 @@
         {
           "Item1": "runtime.win-x86.runtime.native.System.Data.SqlClient.sni",
           "Item2": "[4.4.0, )"
+        }
+      ]
+    },
+    "runtime.native.System.IO.Compression": {
+      "Id": "runtime.native.System.IO.Compression",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.NETCore.Platforms",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "Microsoft.NETCore.Targets",
+          "Item2": "[1.1.0, )"
         }
       ]
     },
@@ -1521,6 +1795,16 @@
       "Version": "1.20260609.1",
       "Dependencies": []
     },
+    "System.AppContext": {
+      "Id": "System.AppContext",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
     "System.Buffers": {
       "Id": "System.Buffers",
       "Version": "4.6.1",
@@ -1633,6 +1917,32 @@
         }
       ]
     },
+    "System.Console": {
+      "Id": "System.Console",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.NETCore.Platforms",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "Microsoft.NETCore.Targets",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "System.IO",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.Encoding",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
     "System.Data.Odbc": {
       "Id": "System.Data.Odbc",
       "Version": "8.0.1",
@@ -1700,8 +2010,8 @@
         }
       ]
     },
-    "System.Diagnostics.Process": {
-      "Id": "System.Diagnostics.Process",
+    "System.Diagnostics.Tools": {
+      "Id": "System.Diagnostics.Tools",
       "Version": "4.3.0",
       "Dependencies": [
         {
@@ -1709,83 +2019,11 @@
           "Item2": "[1.1.0, )"
         },
         {
-          "Item1": "Microsoft.Win32.Primitives",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "Microsoft.Win32.Registry",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "runtime.native.System",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Collections",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Diagnostics.Debug",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Globalization",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.IO",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.IO.FileSystem",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.IO.FileSystem.Primitives",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Resources.ResourceManager",
-          "Item2": "[4.3.0, )"
+          "Item1": "Microsoft.NETCore.Targets",
+          "Item2": "[1.1.0, )"
         },
         {
           "Item1": "System.Runtime",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Runtime.Extensions",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Runtime.Handles",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Runtime.InteropServices",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Text.Encoding",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Text.Encoding.Extensions",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Threading",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Threading.Tasks",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Threading.Thread",
-          "Item2": "[4.3.0, )"
-        },
-        {
-          "Item1": "System.Threading.ThreadPool",
           "Item2": "[4.3.0, )"
         }
       ]
@@ -1971,6 +2209,114 @@
         }
       ]
     },
+    "System.IO.Compression": {
+      "Id": "System.IO.Compression",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.NETCore.Platforms",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "runtime.native.System",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "runtime.native.System.IO.Compression",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Collections",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.Debug",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Resources.ResourceManager",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Handles",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.InteropServices",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.Encoding",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.IO.Compression.ZipFile": {
+      "Id": "System.IO.Compression.ZipFile",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.Compression",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.FileSystem",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.FileSystem.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Resources.ResourceManager",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.Encoding",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
     "System.IO.FileSystem": {
       "Id": "System.IO.FileSystem",
       "Version": "4.3.0",
@@ -2045,19 +2391,15 @@
     },
     "System.IO.Pipes.AccessControl": {
       "Id": "System.IO.Pipes.AccessControl",
-      "Version": "4.5.1",
+      "Version": "5.0.0",
       "Dependencies": [
         {
-          "Item1": "Microsoft.NETCore.Platforms",
-          "Item2": "[2.1.0, )"
-        },
-        {
           "Item1": "System.Security.AccessControl",
-          "Item2": "[4.5.0, )"
+          "Item2": "[5.0.0, )"
         },
         {
           "Item1": "System.Security.Principal.Windows",
-          "Item2": "[4.5.0, )"
+          "Item2": "[5.0.0, )"
         }
       ]
     },
@@ -2093,6 +2435,80 @@
         },
         {
           "Item1": "System.Runtime.Extensions",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Linq.Expressions": {
+      "Id": "System.Linq.Expressions",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Collections",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.Debug",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Globalization",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Linq",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.ObjectModel",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Emit",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Emit.ILGeneration",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Emit.Lightweight",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.TypeExtensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Resources.ResourceManager",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading",
           "Item2": "[4.3.0, )"
         }
       ]
@@ -2180,6 +2596,11 @@
           "Item2": "[1.4.0, )"
         }
       ]
+    },
+    "System.Memory": {
+      "Id": "System.Memory",
+      "Version": "4.5.4",
+      "Dependencies": []
     },
     "System.Net.Http": {
       "Id": "System.Net.Http",
@@ -2318,10 +2739,66 @@
         }
       ]
     },
+    "System.Net.Sockets": {
+      "Id": "System.Net.Sockets",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.NETCore.Platforms",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "Microsoft.NETCore.Targets",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "System.IO",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Net.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
     "System.Numerics.Vectors": {
       "Id": "System.Numerics.Vectors",
       "Version": "4.5.0",
       "Dependencies": []
+    },
+    "System.ObjectModel": {
+      "Id": "System.ObjectModel",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Collections",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.Debug",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Resources.ResourceManager",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading",
+          "Item2": "[4.3.0, )"
+        }
+      ]
     },
     "System.Private.ServiceModel": {
       "Id": "System.Private.ServiceModel",
@@ -2389,6 +2866,72 @@
       "Version": "4.7.1",
       "Dependencies": []
     },
+    "System.Reflection.Emit": {
+      "Id": "System.Reflection.Emit",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.IO",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Emit.ILGeneration",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Reflection.Emit.ILGeneration": {
+      "Id": "System.Reflection.Emit.ILGeneration",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Reflection",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Reflection.Emit.Lightweight": {
+      "Id": "System.Reflection.Emit.Lightweight",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Reflection",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Emit.ILGeneration",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
     "System.Reflection.Extensions": {
       "Id": "System.Reflection.Extensions",
       "Version": "4.3.0",
@@ -2432,6 +2975,20 @@
         {
           "Item1": "Microsoft.NETCore.Targets",
           "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Reflection.TypeExtensions": {
+      "Id": "System.Reflection.TypeExtensions",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Reflection",
+          "Item2": "[4.3.0, )"
         },
         {
           "Item1": "System.Runtime",
@@ -3285,26 +3842,38 @@
       "Version": "8.0.0",
       "Dependencies": []
     },
-    "System.Threading.Thread": {
-      "Id": "System.Threading.Thread",
+    "System.Threading.Tasks.Extensions": {
+      "Id": "System.Threading.Tasks.Extensions",
       "Version": "4.3.0",
       "Dependencies": [
         {
-          "Item1": "System.Runtime",
+          "Item1": "System.Collections",
           "Item2": "[4.3.0, )"
-        }
-      ]
-    },
-    "System.Threading.ThreadPool": {
-      "Id": "System.Threading.ThreadPool",
-      "Version": "4.3.0",
-      "Dependencies": [
+        },
         {
           "Item1": "System.Runtime",
           "Item2": "[4.3.0, )"
         },
         {
-          "Item1": "System.Runtime.Handles",
+          "Item1": "System.Threading.Tasks",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Threading.Timer": {
+      "Id": "System.Threading.Timer",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.NETCore.Platforms",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "Microsoft.NETCore.Targets",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
           "Item2": "[4.3.0, )"
         }
       ]
@@ -3323,6 +3892,126 @@
       "Id": "System.Windows.Extensions",
       "Version": "8.0.0",
       "Dependencies": []
+    },
+    "System.Xml.ReaderWriter": {
+      "Id": "System.Xml.ReaderWriter",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Collections",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.Debug",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Globalization",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.FileSystem",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO.FileSystem.Primitives",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Resources.ResourceManager",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.InteropServices",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.Encoding",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.Encoding.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.RegularExpressions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Xml.XDocument": {
+      "Id": "System.Xml.XDocument",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Collections",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.Debug",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Diagnostics.Tools",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Globalization",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.IO",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Resources.ResourceManager",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Text.Encoding",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Threading",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Xml.ReaderWriter",
+          "Item2": "[4.3.0, )"
+        }
+      ]
     },
     "UiPath.BusinessRules.Client": {
       "Id": "UiPath.BusinessRules.Client",
@@ -3362,35 +4051,31 @@
     },
     "UiPath.CoreIpc": {
       "Id": "UiPath.CoreIpc",
-      "Version": "2.0.1",
+      "Version": "2.1.0-20210811-12-fix",
       "Dependencies": [
         {
-          "Item1": "Microsoft.CSharp",
-          "Item2": "[4.7.0, )"
-        },
-        {
           "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
-          "Item2": "[3.1.6, )"
-        },
-        {
-          "Item1": "Microsoft.Extensions.Logging.Abstractions",
-          "Item2": "[3.1.6, )"
-        },
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[12.0.3, )"
-        },
-        {
-          "Item1": "Nito.AsyncEx",
           "Item2": "[5.0.0, )"
         },
         {
-          "Item1": "System.Diagnostics.Process",
-          "Item2": "[4.3.0, )"
+          "Item1": "Microsoft.Extensions.Logging.Abstractions",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[13.0.1, )"
+        },
+        {
+          "Item1": "Nito.AsyncEx",
+          "Item2": "[5.1.0, )"
         },
         {
           "Item1": "System.IO.Pipes.AccessControl",
-          "Item2": "[4.5.1, )"
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.4, )"
         },
         {
           "Item1": "System.Reflection.DispatchProxy",
@@ -3506,6 +4191,80 @@
         {
           "Item1": "System.Diagnostics.DiagnosticSource",
           "Item2": "[8.0.1, )"
+        }
+      ]
+    },
+    "UiPath.OCR.Activities": {
+      "Id": "UiPath.OCR.Activities",
+      "Version": "4.6.0-preview",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
+          "Item2": "[7.0.1, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Logging.TraceSource",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.24, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[13.0.3, )"
+        },
+        {
+          "Item1": "NLog",
+          "Item2": "[4.7.15, )"
+        },
+        {
+          "Item1": "Polly",
+          "Item2": "[7.1.0, )"
+        },
+        {
+          "Item1": "System.Activities.ViewModels",
+          "Item2": "[1.20260609.1, )"
+        },
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "System.Drawing.Common",
+          "Item2": "[5.0.3, )"
+        },
+        {
+          "Item1": "System.Text.RegularExpressions",
+          "Item2": "[4.3.1, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "UiPath.CodedWorkflows",
+          "Item2": "[24.10.3, )"
+        },
+        {
+          "Item1": "UiPath.CoreIpc",
+          "Item2": "[2.1.0-20210811-12-fix, )"
+        },
+        {
+          "Item1": "UiPath.EmguCVBundle",
+          "Item2": "[3.3.0-preview, )"
+        },
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[3.3.0, )"
+        },
+        {
+          "Item1": "UiPath.Platform",
+          "Item2": "[24.12.3, )"
         }
       ]
     },
@@ -4016,6 +4775,16 @@
     },
     {
       "Package": {
+        "Id": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
+        "Version": "7.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib\\netstandard2.0\\Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1"
+    },
+    {
+      "Package": {
         "Id": "Microsoft.Bcl.AsyncInterfaces",
         "Version": "8.0.0"
       },
@@ -4144,6 +4913,16 @@
     },
     {
       "Package": {
+        "Id": "Microsoft.Extensions.Logging.TraceSource",
+        "Version": "6.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.logging.tracesource\\6.0.0\\lib\\netstandard2.0\\Microsoft.Extensions.Logging.TraceSource.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.logging.tracesource\\6.0.0"
+    },
+    {
+      "Package": {
         "Id": "Microsoft.Extensions.ObjectPool",
         "Version": "8.0.29"
       },
@@ -4212,12 +4991,12 @@
     {
       "Package": {
         "Id": "Microsoft.NETCore.Platforms",
-        "Version": "2.1.0"
+        "Version": "1.1.1"
       },
       "Assemblies": [
-        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\lib\\netstandard1.0\\_._"
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\lib\\netstandard1.0\\_._"
       ],
-      "Path": "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0"
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1"
     },
     {
       "Package": {
@@ -4329,6 +5108,16 @@
     },
     {
       "Package": {
+        "Id": "Microsoft.Rest.ClientRuntime.Azure",
+        "Version": "3.3.18"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib\\netstandard1.4\\Microsoft.Rest.ClientRuntime.Azure.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18"
+    },
+    {
+      "Package": {
         "Id": "Microsoft.Security.Extensions",
         "Version": "1.4.0"
       },
@@ -4354,16 +5143,6 @@
       },
       "Assemblies": [],
       "Path": "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0"
-    },
-    {
-      "Package": {
-        "Id": "Microsoft.Win32.Registry",
-        "Version": "4.3.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.registry\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\Microsoft.Win32.Registry.dll"
-      ],
-      "Path": "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.registry\\4.3.0"
     },
     {
       "Package": {
@@ -4442,6 +5221,14 @@
         "C:\\Users\\Dell\\.nuget\\packages\\net.adamec.lib.common.dmn.engine\\1.1.1\\lib\\netstandard2.0\\net.adamec.lib.common.dmn.engine.dll"
       ],
       "Path": "C:\\Users\\Dell\\.nuget\\packages\\net.adamec.lib.common.dmn.engine\\1.1.1"
+    },
+    {
+      "Package": {
+        "Id": "NETStandard.Library",
+        "Version": "1.6.1"
+      },
+      "Assemblies": [],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\netstandard.library\\1.6.1"
     },
     {
       "Package": {
@@ -4563,6 +5350,16 @@
     },
     {
       "Package": {
+        "Id": "Polly",
+        "Version": "7.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\polly\\7.1.0\\lib\\netstandard2.0\\Polly.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\polly\\7.1.0"
+    },
+    {
+      "Package": {
         "Id": "PuppeteerSharp",
         "Version": "18.1.0"
       },
@@ -4590,6 +5387,16 @@
         "C:\\Users\\Dell\\.nuget\\packages\\runtime.any.system.collections\\4.3.0\\lib\\netstandard1.3\\System.Collections.dll"
       ],
       "Path": "C:\\Users\\Dell\\.nuget\\packages\\runtime.any.system.collections\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.any.System.Diagnostics.Tools",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\runtime.any.system.diagnostics.tools\\4.3.0\\lib\\netstandard1.3\\System.Diagnostics.Tools.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\runtime.any.system.diagnostics.tools\\4.3.0"
     },
     {
       "Package": {
@@ -4733,6 +5540,16 @@
     },
     {
       "Package": {
+        "Id": "runtime.any.System.Threading.Timer",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\runtime.any.system.threading.timer\\4.3.0\\lib\\netstandard1.3\\System.Threading.Timer.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\runtime.any.system.threading.timer\\4.3.0"
+    },
+    {
+      "Package": {
         "Id": "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl",
         "Version": "4.3.2"
       },
@@ -4796,6 +5613,16 @@
       },
       "Assemblies": [],
       "Path": "C:\\Users\\Dell\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0"
+    },
+    {
+      "Package": {
+        "Id": "runtime.native.System.IO.Compression",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\runtime.native.system.io.compression\\4.3.0\\lib\\netstandard1.0\\_._"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\runtime.native.system.io.compression\\4.3.0"
     },
     {
       "Package": {
@@ -4951,6 +5778,16 @@
     },
     {
       "Package": {
+        "Id": "runtime.win.System.Console",
+        "Version": "4.3.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\runtime.win.system.console\\4.3.1\\runtimes\\win\\lib\\netstandard1.3\\System.Console.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\runtime.win.system.console\\4.3.1"
+    },
+    {
+      "Package": {
         "Id": "runtime.win.System.Diagnostics.Debug",
         "Version": "4.3.0"
       },
@@ -4981,6 +5818,16 @@
     },
     {
       "Package": {
+        "Id": "runtime.win.System.Net.Sockets",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\runtime.win.system.net.sockets\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.Net.Sockets.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\runtime.win.system.net.sockets\\4.3.0"
+    },
+    {
+      "Package": {
         "Id": "runtime.win.System.Runtime.Extensions",
         "Version": "4.3.0"
       },
@@ -5008,6 +5855,16 @@
         "C:\\Users\\Dell\\.nuget\\packages\\system.activities.viewmodels\\1.20260609.1\\lib\\net6.0-windows7.0\\System.Activities.ViewModels.dll"
       ],
       "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.activities.viewmodels\\1.20260609.1"
+    },
+    {
+      "Package": {
+        "Id": "System.AppContext",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\system.appcontext\\4.3.0\\lib\\netstandard1.6\\System.AppContext.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.appcontext\\4.3.0"
     },
     {
       "Package": {
@@ -5089,6 +5946,14 @@
     },
     {
       "Package": {
+        "Id": "System.Console",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.console\\4.3.0"
+    },
+    {
+      "Package": {
         "Id": "System.Data.Odbc",
         "Version": "8.0.1"
       },
@@ -5158,13 +6023,11 @@
     },
     {
       "Package": {
-        "Id": "System.Diagnostics.Process",
+        "Id": "System.Diagnostics.Tools",
         "Version": "4.3.0"
       },
-      "Assemblies": [
-        "C:\\Users\\Dell\\.nuget\\packages\\system.diagnostics.process\\4.3.0\\runtimes\\win\\lib\\netstandard1.4\\System.Diagnostics.Process.dll"
-      ],
-      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.diagnostics.process\\4.3.0"
+      "Assemblies": [],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.diagnostics.tools\\4.3.0"
     },
     {
       "Package": {
@@ -5280,6 +6143,26 @@
     },
     {
       "Package": {
+        "Id": "System.IO.Compression",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\system.io.compression\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.IO.Compression.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.io.compression\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.IO.Compression.ZipFile",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\system.io.compression.zipfile\\4.3.0\\lib\\netstandard1.3\\System.IO.Compression.ZipFile.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.io.compression.zipfile\\4.3.0"
+    },
+    {
+      "Package": {
         "Id": "System.IO.FileSystem",
         "Version": "4.3.0"
       },
@@ -5329,12 +6212,12 @@
     {
       "Package": {
         "Id": "System.IO.Pipes.AccessControl",
-        "Version": "4.5.1"
+        "Version": "5.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\Dell\\.nuget\\packages\\system.io.pipes.accesscontrol\\4.5.1\\runtimes\\win\\lib\\netcoreapp2.1\\System.IO.Pipes.AccessControl.dll"
+        "C:\\Users\\Dell\\.nuget\\packages\\system.io.pipes.accesscontrol\\5.0.0\\runtimes\\win\\lib\\net5.0\\System.IO.Pipes.AccessControl.dll"
       ],
-      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.io.pipes.accesscontrol\\4.5.1"
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.io.pipes.accesscontrol\\5.0.0"
     },
     {
       "Package": {
@@ -5358,6 +6241,16 @@
     },
     {
       "Package": {
+        "Id": "System.Linq.Expressions",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\system.linq.expressions\\4.3.0\\lib\\netstandard1.6\\System.Linq.Expressions.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.linq.expressions\\4.3.0"
+    },
+    {
+      "Package": {
         "Id": "System.Management",
         "Version": "8.0.0"
       },
@@ -5375,6 +6268,16 @@
         "C:\\Users\\Dell\\.nuget\\packages\\system.management.automation\\7.4.18\\runtimes\\win\\lib\\net8.0\\System.Management.Automation.dll"
       ],
       "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.management.automation\\7.4.18"
+    },
+    {
+      "Package": {
+        "Id": "System.Memory",
+        "Version": "4.5.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\system.memory\\4.5.4\\lib\\netcoreapp2.1\\_._"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.memory\\4.5.4"
     },
     {
       "Package": {
@@ -5398,11 +6301,29 @@
     },
     {
       "Package": {
+        "Id": "System.Net.NameResolution",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\system.net.nameresolution\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.Net.NameResolution.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.net.nameresolution\\4.3.0"
+    },
+    {
+      "Package": {
         "Id": "System.Net.Primitives",
         "Version": "4.3.0"
       },
       "Assemblies": [],
       "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.net.primitives\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Net.Sockets",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.net.sockets\\4.3.0"
     },
     {
       "Package": {
@@ -5413,6 +6334,16 @@
         "C:\\Users\\Dell\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\lib\\netcoreapp2.0\\_._"
       ],
       "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.numerics.vectors\\4.5.0"
+    },
+    {
+      "Package": {
+        "Id": "System.ObjectModel",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\system.objectmodel\\4.3.0\\lib\\netstandard1.3\\System.ObjectModel.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.objectmodel\\4.3.0"
     },
     {
       "Package": {
@@ -5462,6 +6393,36 @@
     },
     {
       "Package": {
+        "Id": "System.Reflection.Emit",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\system.reflection.emit\\4.3.0\\lib\\netstandard1.3\\System.Reflection.Emit.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.reflection.emit\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Reflection.Emit.ILGeneration",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\lib\\netstandard1.3\\System.Reflection.Emit.ILGeneration.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Reflection.Emit.Lightweight",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\lib\\netstandard1.3\\System.Reflection.Emit.Lightweight.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0"
+    },
+    {
+      "Package": {
         "Id": "System.Reflection.Extensions",
         "Version": "4.3.0"
       },
@@ -5485,6 +6446,16 @@
       },
       "Assemblies": [],
       "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.reflection.primitives\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Reflection.TypeExtensions",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\lib\\netstandard1.5\\System.Reflection.TypeExtensions.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0"
     },
     {
       "Package": {
@@ -5893,23 +6864,21 @@
     },
     {
       "Package": {
-        "Id": "System.Threading.Thread",
+        "Id": "System.Threading.Tasks.Extensions",
         "Version": "4.3.0"
       },
       "Assemblies": [
-        "C:\\Users\\Dell\\.nuget\\packages\\system.threading.thread\\4.3.0\\lib\\netstandard1.3\\System.Threading.Thread.dll"
+        "C:\\Users\\Dell\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\lib\\netstandard1.0\\System.Threading.Tasks.Extensions.dll"
       ],
-      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.threading.thread\\4.3.0"
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0"
     },
     {
       "Package": {
-        "Id": "System.Threading.ThreadPool",
+        "Id": "System.Threading.Timer",
         "Version": "4.3.0"
       },
-      "Assemblies": [
-        "C:\\Users\\Dell\\.nuget\\packages\\system.threading.threadpool\\4.3.0\\lib\\netstandard1.3\\System.Threading.ThreadPool.dll"
-      ],
-      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.threading.threadpool\\4.3.0"
+      "Assemblies": [],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.threading.timer\\4.3.0"
     },
     {
       "Package": {
@@ -5943,6 +6912,26 @@
     },
     {
       "Package": {
+        "Id": "System.Xml.ReaderWriter",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\lib\\netstandard1.3\\System.Xml.ReaderWriter.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.xml.readerwriter\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Xml.XDocument",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\lib\\netstandard1.3\\System.Xml.XDocument.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\system.xml.xdocument\\4.3.0"
+    },
+    {
+      "Package": {
         "Id": "UiPath.BusinessRules.Client",
         "Version": "2.1.0"
       },
@@ -5964,12 +6953,12 @@
     {
       "Package": {
         "Id": "UiPath.CoreIpc",
-        "Version": "2.0.1"
+        "Version": "2.1.0-20210811-12-fix"
       },
       "Assemblies": [
-        "C:\\Users\\Dell\\.nuget\\packages\\uipath.coreipc\\2.0.1\\lib\\netstandard2.0\\UiPath.CoreIpc.dll"
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.coreipc\\2.1.0-20210811-12-fix\\lib\\net5.0-windows7.0\\UiPath.CoreIpc.dll"
       ],
-      "Path": "C:\\Users\\Dell\\.nuget\\packages\\uipath.coreipc\\2.0.1"
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\uipath.coreipc\\2.1.0-20210811-12-fix"
     },
     {
       "Package": {
@@ -6042,6 +7031,19 @@
         "C:\\Users\\Dell\\.nuget\\packages\\uipath.errorinfo\\25.10.2\\lib\\net8.0-windows7.0\\UiPath.ErrorInfo.dll"
       ],
       "Path": "C:\\Users\\Dell\\.nuget\\packages\\uipath.errorinfo\\25.10.2"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.OCR.Activities",
+        "Version": "4.6.0-preview"
+      },
+      "Assemblies": [
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.ocr.activities\\4.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.Api.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.ocr.activities\\4.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.ocr.activities\\4.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.OCR.Activities.dll",
+        "C:\\Users\\Dell\\.nuget\\packages\\uipath.ocr.activities\\4.6.0-preview\\lib\\net6.0-windows7.0\\UiPath.OCR.Core.dll"
+      ],
+      "Path": "C:\\Users\\Dell\\.nuget\\packages\\uipath.ocr.activities\\4.6.0-preview"
     },
     {
       "Package": {

@@ -6,9 +6,9 @@
   "dependencies": {
     "UiPath.System.Activities": "[26.10.0]",
     "UiPath.PDF.Activities": "4.6.0-preview",
-    "UiPath.OCR.Activities": "4.5.0",
+    "UiPath.OCR.Activities": "4.6.0-preview",
     "UiPath.DocumentUnderstanding.OCR.LocalServer": "2.0.1",
-        "UiPath.CoreIPC": "2.0.1"
+    "UiPath.CoreIPC": "2.1.0-20210811-12-fix"
   },
   "webServices": [],
   "entitiesStores": [],

@@ -1,5 +1,6 @@
 {
   "UiPath.DocumentProcessing.Contracts": "2.5.0-preview",
+  "UiPath.OCR.Activities": "4.6.0-preview",
   "UiPath.PDF.Activities": "4.6.0-preview",
   "UiPath.System.Activities": "26.10.0"
 }
